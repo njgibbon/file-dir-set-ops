@@ -18,7 +18,7 @@ def main():
     operation = args.operation
     dir_paths = args.dir_paths
 
-    dir_paths_length = len(DIR_PATHS)
+    dir_paths_length = len(dir_paths)
 
     if dir_paths_length < 2:
         print("ERROR: At least 2 valid directory paths must be input to perform Set operations.")
