@@ -15,8 +15,8 @@ def main():
     arg_parser.add_argument('--dir-paths', '-dir-paths', '--paths', '-paths', action='store', type=str, required=True, nargs='+', help='Directory paths for sets of files that will be used in Set operations.')
     args = arg_parser.parse_args()
 
-    OPERATION = args.operation
-    DIR_PATHS = args.dir_paths
+    operation = args.operation
+    dir_paths = args.dir_paths
 
     dir_paths_length = len(DIR_PATHS)
 
@@ -28,18 +28,18 @@ def main():
     file_set_rest_list = []
     counter = 0
 
-    for dir_path in DIR_PATHS:
+    for dir_path in dir_paths:
         if counter == 0:
             file_set_main = get_file_set_from_dir_path(dir_path)
         else:
             file_set_rest_list.append(get_file_set_from_dir_path(dir_path))
         counter = counter + 1
 
-    if OPERATION in intersection_choices:
+    if operation in intersection_choices:
         result = file_set_main.intersection(*file_set_rest_list)
-    elif OPERATION in union_choices:
+    elif operation in union_choices:
         result = file_set_main.union(*file_set_rest_list)
-    elif OPERATION in complement_choices:
+    elif operation in complement_choices:
         result = file_set_main.difference(*file_set_rest_list)
 
     print_items_with_newline(result)
