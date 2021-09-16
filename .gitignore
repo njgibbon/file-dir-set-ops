@@ -1,5 +1,5 @@
 *.pyc
 dist/
-file-dir-set-ops.egg-info/
+file_dir_set_ops.egg-info/
 build/
 *.DS_Store
