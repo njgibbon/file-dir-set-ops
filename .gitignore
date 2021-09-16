@@ -2,3 +2,4 @@
 dist/
 file-dir-set-ops.egg-info/
 build/
+*.DS_Store
