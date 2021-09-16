@@ -36,7 +36,7 @@ def main():
 
     if OPERATION in intersection_choices:
         result = file_set_main.intersection(*file_set_rest_list)
-    elif OPERATION == union_choices:
+    elif OPERATION in union_choices:
         result = file_set_main.union(*file_set_rest_list)
     elif OPERATION in complement_choices:
         result = file_set_main.difference(*file_set_rest_list)
