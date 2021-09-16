@@ -5,7 +5,7 @@ setup(
     name='file-dir-set-ops',
     description='Set Operations on File Directories.',
     url='https://github.com/njgibbon/file-dir-set-ops'
-    version='0.0.0.1',
+    version='0.0.1',
     author="Nick Gibbon",
     packages=find_packages(),
     entry_points={
