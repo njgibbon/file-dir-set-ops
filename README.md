@@ -1,4 +1,5 @@
-# file-dir-set-ops
+![file-dir-set-ops](images/file-dir-set-ops.png)
+
 Set Operations on File Directories.
 
 Use some basic Set Operations to analyse and compare the files in 2 or more given directories.
