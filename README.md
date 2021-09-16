@@ -4,6 +4,9 @@ Set Operations on File Directories.
 
 Use some basic Set Operations to analyse and compare the files in 2 or more given directories.
 
+# Background
+Several times over the past couple of years I've had to work out the difference between 2 folders in terms of files. Each time I go from manually looking to unix utilies to ad-hoc scripts. This little tool should permanently solve this problem.
+
 
 # Install
 ```
@@ -19,7 +22,7 @@ b = b.txt, file.txt
 c = c.txt, file.txt
 ```
 ### Union
-In A OR B OR C.
+In **A** OR **B** OR **C**.
 ```
 file-dir-set-ops --operation union --dir-paths tests/data/a tests/data/b tests/data/c
 
@@ -29,14 +32,14 @@ c.txt
 file.txt
 ```
 ### Intersection
-In A AND B AND C.
+In **A** AND **B** AND **C**.
 ```
 file-dir-set-ops --operation intersection --dir-paths tests/data/a tests/data/b tests/data/c
 
 file.txt
 ```
 ### Complement (Set Difference)
-In A AND Not in B OR C.
+In **A** AND Not in **B** OR **C**.
 ```
 file-dir-set-ops --operation complement --dir-paths tests/data/a tests/data/b tests/data/c
 
