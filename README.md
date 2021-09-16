@@ -5,7 +5,9 @@ Use some basic Set Operations to analyse and compare the files in 2 or more give
 
 
 # Install
-TODO
+```
+pip3 install file-dir-set-ops --upgrade
+```
 
 
 # Use
@@ -18,7 +20,7 @@ c = c.txt, file.txt
 ### Union
 In A OR B OR C.
 ```
-python3 file-dir-set-ops/main.py --operation union --dirpaths tests/data/a tests/data/b tests/data/c
+file-dir-set-ops --operation union --dirpaths tests/data/a tests/data/b tests/data/c
 
 a.txt
 b.txt
@@ -28,14 +30,14 @@ file.txt
 ### Intersection
 In A AND B AND C.
 ```
-python3 file-dir-set-ops/main.py --operation intersection --dirpaths tests/data/a tests/data/b tests/data/c
+file-dir-set-ops --operation intersection --dirpaths tests/data/a tests/data/b tests/data/c
 
 file.txt
 ```
 ### Complement (Set Difference)
 In A AND Not in B OR C.
 ```
-python3 file-dir-set-ops/main.py --operation complement --dirpaths tests/data/a tests/data/b tests/data/c
+file-dir-set-ops --operation complement --dirpaths tests/data/a tests/data/b tests/data/c
 
 a.txt
 ```
