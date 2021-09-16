@@ -45,7 +45,7 @@ jobs:
 
     - name: Pylint
       run: |
-        pylint file-dire-set-ops
+        pylint file_dir_set_ops
 
 
   bandit:
@@ -109,6 +109,6 @@ jobs:
         
     - name: Python Integration Test
       run: |
-        python file-dir-set-ops/main.py --operation union --dir-paths tests/data/a tests/data/b tests/data/c
-        python file-dir-set-ops/main.py --operation intersection --dir-paths tests/data/a tests/data/b tests/data/c
-        python file-dir-set-ops/main.py --operation complement --dir-paths tests/data/a tests/data/b tests/data/c
+        python file_dir_set_ops/main.py --operation union --dir-paths tests/data/a tests/data/b tests/data/c
+        python file_dir_set_ops/main.py --operation intersection --dir-paths tests/data/a tests/data/b tests/data/c
+        python file_dir_set_ops/main.py --operation complement --dir-paths tests/data/a tests/data/b tests/data/c

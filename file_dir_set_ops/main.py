@@ -41,21 +41,19 @@ def main():
         result = file_set_main.union(*file_set_rest_list)
     elif OPERATION in complement_choices:
         result = file_set_main.difference(*file_set_rest_list)
-    
+
     print_items_with_newline(result)
 
 
 def get_file_set_from_dir_path(dir_path):
     file_set = set()
     for obj in os.listdir(dir_path):
-        if os.path.isfile(os.path.join(dir_path,obj)): 
+        if os.path.isfile(os.path.join(dir_path, obj)):
             file_set.add(obj)
     return file_set
 
 
 def print_items_with_newline(items):
-    counter = 0
-    items_length = len(items)
     for item in items:
         print(item)
 

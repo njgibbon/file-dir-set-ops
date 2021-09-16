@@ -1,4 +1,3 @@
-import sys
 import unittest
 
 import file_dir_set_ops.main
