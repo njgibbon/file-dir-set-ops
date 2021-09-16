@@ -1,4 +1,5 @@
-![file-dir-set-ops](images/file-dir-set-ops.png | width=100)
+![file-dir-set-ops](images/file-dir-set-ops.png)
+<img src="images/file-dir-set-ops.png" alt="file-dir-set-ops" width="100">
 
 Set Operations on File Directories.
 
