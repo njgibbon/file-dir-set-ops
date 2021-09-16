@@ -1,0 +1,4 @@
+*.pyc
+dist/
+file-dir-set-ops.egg-info/
+build/
