@@ -1,0 +1,3 @@
+[console_scripts]
+file-dir-set-ops = file_dir_set_ops.main:main
+

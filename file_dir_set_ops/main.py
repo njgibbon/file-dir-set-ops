@@ -10,7 +10,7 @@ def main():
     operation_choices = intersection_choices + union_choices + complement_choices
 
     arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument('--version', '-version', '--v', '-v', action='version', version='0.0.0.1')
+    arg_parser.add_argument('--version', '-version', '--v', '-v', action='version', version='0.0.0.3')
     arg_parser.add_argument('--operation', '-operation', '--op', '-op', action='store', type=str, required=True, choices=operation_choices, help='Set operation to perform.')
     arg_parser.add_argument('--dir-paths', '-dir-paths', '--paths', '-paths', action='store', type=str, required=True, nargs='+', help='Directory paths for sets of files that will be used in Set operations.')
     args = arg_parser.parse_args()

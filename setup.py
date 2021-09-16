@@ -4,8 +4,9 @@ from setuptools import find_packages
 setup(
     name='file-dir-set-ops',
     description='Set Operations on File Directories.',
+    long_description='Set Operations on File Directories.',
     url='https://github.com/njgibbon/file-dir-set-ops',
-    version='0.0.0.1',
+    version='0.0.0.3',
     author="Nick Gibbon",
     packages=find_packages(),
     entry_points={
