@@ -24,6 +24,7 @@ jobs:
       run: |
         flake8 .
 
+
   pylint:
     name: Pylint 
     runs-on: ubuntu-latest
@@ -46,6 +47,7 @@ jobs:
       run: |
         pylint file-dire-set-ops
 
+
   bandit:
     name: Bandit
     runs-on: ubuntu-latest
@@ -67,12 +69,31 @@ jobs:
       run: |
         bandit -r .
 
+
   fend:
     name: Fend
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - uses: njgibbon/fend@main
+
+
+  unit:
+    name: Unit
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+        
+    - name: Python Unit Test
+      run: |
+        python3 -m unittest discover tests
+
 
   integration:
     name: Integration
