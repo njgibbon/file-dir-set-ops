@@ -12,4 +12,4 @@ class TestMain(unittest.TestCase):
         expected_set = {'a.txt', 'file.txt'}
         file_set = file_dir_set_ops.main.get_file_set_from_dir_path("tests/data/a")
         print(file_set)
-        assert(file_set == expected_set)
+        self.assertTrue(file_set == expected_set)
