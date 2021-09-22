@@ -24,7 +24,8 @@ pip3 install file-dir-set-ops --upgrade
 
 ## Union
 ![union](images/union.gif)
-<img src="images/venn-union.png" alt="venn-union" width="100">
+
+<img src="images/venn-union.png" alt="venn-union" width="150">
 
 (In **A** OR **B** OR **C**)
 ```
@@ -37,7 +38,10 @@ file.txt
 ```
 
 ## Intersection
-![union](images/intersection.gif)  
+![union](images/intersection.gif)
+
+<img src="images/venn-intersection.png" alt="venn-intersection" width="150">
+
 (In **A** AND **B** AND **C**)
 ```
 file-dir-set-ops --operation intersection --dir-paths tests/data/a tests/data/b tests/data/c
@@ -46,7 +50,10 @@ file.txt
 ```
 
 ## Relative Complement (Set Difference)
-![complement](images/complement.gif)  
+![complement](images/complement.gif)
+
+<img src="images/venn-complement.png" alt="venn-complement" width="150">
+
 (In **A** AND Not in **B** OR **C**)
 ```
 file-dir-set-ops --operation complement --dir-paths tests/data/a tests/data/b tests/data/c
