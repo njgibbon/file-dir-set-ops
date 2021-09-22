@@ -15,14 +15,14 @@ pip3 install file-dir-set-ops --upgrade
 
 
 # Usage
-### Test Data
+### Data
 ```
-a = a.txt, file.txt
-b = b.txt, file.txt
-c = c.txt, file.txt
+A = { a.txt, file.txt }
+B = { b.txt, file.txt }
+C = { c.txt, file.txt }
 ```
 ### Union
-In **A** OR **B** OR **C**.
+In **A** OR **B** OR **C**.  
 ![union](images/union.gif)
 ```
 file-dir-set-ops --operation union --dir-paths tests/data/a tests/data/b tests/data/c
@@ -33,7 +33,7 @@ c.txt
 file.txt
 ```
 ### Intersection
-In **A** AND **B** AND **C**.
+In **A** AND **B** AND **C**.  
 ![union](images/intersection.gif)
 ```
 file-dir-set-ops --operation intersection --dir-paths tests/data/a tests/data/b tests/data/c
@@ -55,5 +55,4 @@ a.txt
 * Intersection: https://en.wikipedia.org/wiki/Intersection_(set_theory)
 * (Relative) Complement: https://en.wikipedia.org/wiki/Complement_(set_theory)
 * Python Sets: https://realpython.com/python-sets
-* https://www.codecogs.com
-
+* https://www.codecogs.com/latex/eqneditor.php
