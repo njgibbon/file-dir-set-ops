@@ -14,7 +14,7 @@ pip3 install file-dir-set-ops --upgrade
 ```
 
 
-# Use
+# Usage
 ### Test Data
 ```
 a = a.txt, file.txt
@@ -23,6 +23,8 @@ c = c.txt, file.txt
 ```
 ### Union
 In **A** OR **B** OR **C**.
+
+$A \cup B \cup C$
 ```
 file-dir-set-ops --operation union --dir-paths tests/data/a tests/data/b tests/data/c
 
