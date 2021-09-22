@@ -23,7 +23,9 @@ pip3 install file-dir-set-ops --upgrade
 ![sets](images/sets.gif)
 
 ## Union
-![union](images/union.gif)  
+![union](images/union.gif)
+<img src="images/venn-union.png" alt="venn-union" width="100">
+
 (In **A** OR **B** OR **C**)
 ```
 file-dir-set-ops --operation union --dir-paths tests/data/a tests/data/b tests/data/c
