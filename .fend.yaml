@@ -3,3 +3,4 @@ skip:
     - __init__.py
   extension: 
     - .png
+    - .gif
