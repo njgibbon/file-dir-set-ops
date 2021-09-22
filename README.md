@@ -23,8 +23,7 @@ c = c.txt, file.txt
 ```
 ### Union
 In **A** OR **B** OR **C**.
-
-$A \cup B \cup C$
+![union](images/union.gif)
 ```
 file-dir-set-ops --operation union --dir-paths tests/data/a tests/data/b tests/data/c
 
@@ -35,12 +34,13 @@ file.txt
 ```
 ### Intersection
 In **A** AND **B** AND **C**.
+![union](images/intersection.gif)
 ```
 file-dir-set-ops --operation intersection --dir-paths tests/data/a tests/data/b tests/data/c
 
 file.txt
 ```
-### Complement (Set Difference)
+### Relative Complement (Set Difference)
 In **A** AND Not in **B** OR **C**.
 ```
 file-dir-set-ops --operation complement --dir-paths tests/data/a tests/data/b tests/data/c
@@ -55,3 +55,5 @@ a.txt
 * Intersection: https://en.wikipedia.org/wiki/Intersection_(set_theory)
 * (Relative) Complement: https://en.wikipedia.org/wiki/Complement_(set_theory)
 * Python Sets: https://realpython.com/python-sets
+* https://www.codecogs.com
+
