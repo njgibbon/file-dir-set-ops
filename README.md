@@ -7,7 +7,7 @@ Use some basic Set Operations to analyse and compare the file names in 2 or more
 # Background
 Several times over the past couple of years I've had to work out the difference between 2 folders in terms of files.
 
-Each time it's manually looking > unix utilies > ad-hoc scripts.
+Each time it's manually looking > unix utilities > ad-hoc scripts.
 
 This little tool should permanently solve this problem.
 
