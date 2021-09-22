@@ -2,10 +2,12 @@
 
 Set Operations on File Directories.
 
-Use some basic Set Operations to analyse and compare the files in 2 or more given directories.
+Use some basic Set Operations to analyse and compare the file names in 2 or more given directories.
 
 # Background
-Several times over the past couple of years I've had to work out the difference between 2 folders in terms of files. Each time I go from manually looking to unix utilies to ad-hoc scripts. This little tool should permanently solve this problem.
+Several times over the past couple of years I've had to work out the difference between 2 folders in terms of files. 
+Each time it's manually looking > unix utilies > ad-hoc scripts. 
+This little tool should permanently solve this problem.
 
 
 # Install
@@ -15,15 +17,11 @@ pip3 install file-dir-set-ops --upgrade
 
 
 # Usage
-### Data
-```
-A = { a.txt, file.txt }
-B = { b.txt, file.txt }
-C = { c.txt, file.txt }
-```
+## Data
+![sets](images/sets.gif)
 ### Union
-In **A** OR **B** OR **C**.  
-![union](images/union.gif)
+![union](images/union.gif)  
+In **A** OR **B** OR **C**.
 ```
 file-dir-set-ops --operation union --dir-paths tests/data/a tests/data/b tests/data/c
 
@@ -33,14 +31,15 @@ c.txt
 file.txt
 ```
 ### Intersection
-In **A** AND **B** AND **C**.  
-![union](images/intersection.gif)
+![union](images/intersection.gif)  
+In **A** AND **B** AND **C**.
 ```
 file-dir-set-ops --operation intersection --dir-paths tests/data/a tests/data/b tests/data/c
 
 file.txt
 ```
 ### Relative Complement (Set Difference)
+![complement](images/complement.gif)  
 In **A** AND Not in **B** OR **C**.
 ```
 file-dir-set-ops --operation complement --dir-paths tests/data/a tests/data/b tests/data/c
