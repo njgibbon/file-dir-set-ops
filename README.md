@@ -19,9 +19,10 @@ pip3 install file-dir-set-ops --upgrade
 # Usage
 ## Data
 ![sets](images/sets.gif)
-### Union
+
+## Union
 ![union](images/union.gif)  
-In **A** OR **B** OR **C**.
+(In **A** OR **B** OR **C**)
 ```
 file-dir-set-ops --operation union --dir-paths tests/data/a tests/data/b tests/data/c
 
@@ -30,17 +31,19 @@ b.txt
 c.txt
 file.txt
 ```
-### Intersection
+
+## Intersection
 ![union](images/intersection.gif)  
-In **A** AND **B** AND **C**.
+(In **A** AND **B** AND **C**)
 ```
 file-dir-set-ops --operation intersection --dir-paths tests/data/a tests/data/b tests/data/c
 
 file.txt
 ```
-### Relative Complement (Set Difference)
+
+## Relative Complement (Set Difference)
 ![complement](images/complement.gif)  
-In **A** AND Not in **B** OR **C**.
+(In **A** AND Not in **B** OR **C**)
 ```
 file-dir-set-ops --operation complement --dir-paths tests/data/a tests/data/b tests/data/c
 
